@@ -22,7 +22,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 10fastfingers Auto Type is a program that automate the typing experience for you, with various features and settings to choose.
 
 
