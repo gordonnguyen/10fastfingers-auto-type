@@ -6,7 +6,7 @@
   <h3 align="center">10fastfingers Auto Type</h3>
 
   <p align="center">
-    An Over-complexify Auto Type Program
+    An Over-complicated Auto Type Program
     <br />
     <br />
     <a href="https://github.com/gordon-nguyen/10fastfingers-auto-type/issues">Report Bug</a>
@@ -22,8 +22,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-10fastfingers Auto Type is a program that automate the typing experience for you, with various features and settings to choose.
-
+10fastfingers Auto Type is a Python program that automates your typing experience on 10fastfingers.com, with various features and settings to choose from.
+No longer do you have to ruin your precious keyboard or feeling miserable about your slow typing.
 
 
 <!-- GETTING STARTED -->
