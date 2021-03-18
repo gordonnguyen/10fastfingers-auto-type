@@ -1,8 +1,14 @@
+import os,sys,inspect
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+
+# Init working folder
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
 
 # URLS
 SIGNIN_URL = "https://10fastfingers.com/login"
@@ -32,7 +38,7 @@ def main():
     num_test_loop = int(setting['num_test_loop'])
     extract_text_to_file = setting['extract_text_to_file']
     extracted_text = ''
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome('bin/chromedriver.exe')
 
     # Sign in
     if use_account == True:
@@ -61,13 +67,14 @@ def main():
 
     # extract words from test to file
     if extract_text_to_file:
-        with open('competition_text_file.txt', 'w') as text_f:
+        with open('data/competition_text_file.txt', 'w') as text_f:
             text_f.write(extracted_text)
 
     print('\n'+LINE+"\nALL DONE! Check your browser for results!")
 
     # Retain browser for viewing
     time.sleep(FINAL_VIEWING_TIME)
+    driver.close()
 
 def read_ini_settings():
     setting_temp = []
@@ -76,7 +83,7 @@ def read_ini_settings():
     seperate_symbol = '=' 
 
     # Open and read setting.ini
-    with open('setting.ini') as f:
+    with open('data/setting.ini') as f:
         for item in f:
             if not (item.startswith('#') or item.startswith('\n')):
                 setting_temp.append(item.split(seperate_symbol))  # Will result with a 2D list

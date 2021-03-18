@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple steps.
   ```sh
   pip install selenium
   ```
-* [webdriver](https://selenium-python.readthedocs.io/installation.html#drivers) (Chromedriver 89 is already included)
+* [WebDriver](https://selenium-python.readthedocs.io/installation.html#drivers) (Chromedriver 89 already included)
 
 ### Installation
 
@@ -46,7 +46,7 @@ To get a local copy up and running follow these simple steps.
    ```sh
    git clone https://github.com/gordon-nguyen/10fastfingers-auto-type.git
    ```
-2. Adjust to your liking in settings.ini. Most are self-explainatory.
+2. Adjust data/settings.ini to your liking. Most are self-explainatory.
    ```sh
     ### SETTING ###
     typing_test_url = https://10fastfingers.com/typing-test/english
